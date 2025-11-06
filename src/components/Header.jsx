@@ -35,7 +35,7 @@ const Header = () => {
               <li key={idx}>
                 <Link
                   to={item.path}
-                  className="px-3 py-2 rounded-full bg-white/30 backdrop-blur-sm text-gray-800 hover:bg-blue-600 hover:text-white transition shadow-sm text-sm"
+                  className="px-3 py-2 rounded-full bg-white/30 backdrop-blur-sm text-gray-800 hover:bg-gradient-to-r hover:from-sky-500 hover:to-blue-600 hover:text-white transition-all shadow-sm hover:shadow-md text-sm transform hover:scale-105"
                 >
                   {item.name}
                 </Link>
@@ -45,7 +45,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <button className="hidden sm:block bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition text-sm">
+          <button className="hidden sm:block bg-gradient-to-r from-sky-500 to-blue-600 text-white px-5 py-2 rounded-full shadow-md hover:shadow-lg hover:from-sky-600 hover:to-blue-700 transition-all text-sm font-semibold transform hover:scale-105">
             Register
           </button>
 
@@ -80,14 +80,14 @@ const Header = () => {
                 <Link
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 rounded-lg bg-gray-50 text-gray-800 hover:bg-blue-600 hover:text-white transition"
+                  className="block px-4 py-3 rounded-lg bg-gray-50 text-gray-800 hover:bg-gradient-to-r hover:from-sky-500 hover:to-blue-600 hover:text-white transition-all"
                 >
                   {item.name}
                 </Link>
               </li>
             ))}
             <li className="pt-2">
-              <button className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+              <button className="w-full bg-gradient-to-r from-sky-500 to-blue-600 text-white px-4 py-3 rounded-lg shadow-md hover:shadow-lg hover:from-sky-600 hover:to-blue-700 transition-all font-semibold">
                 Register
               </button>
             </li>

@@ -18,17 +18,17 @@ const TopProfessionals = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {professionals.map(pro => (
-            <div key={pro.id} className="flex flex-col sm:flex-row items-center sm:items-start bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <img src={pro.image} alt={pro.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-blue-500 object-cover flex-shrink-0" />
+            <div key={pro.id} className="flex flex-col sm:flex-row items-center sm:items-start bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+              <img src={pro.image} alt={pro.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-blue-500 object-cover flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300" />
               <div className="text-center sm:text-left">
-                <h4 className="text-lg sm:text-xl font-bold mb-2">{pro.name}</h4>
-                <p className="text-sm sm:text-base text-gray-600">{pro.description}</p>
+                <h4 className="text-lg sm:text-xl font-bold mb-2 text-gray-800">{pro.name}</h4>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{pro.description}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 font-semibold inline-flex items-center gap-2 transition">
+          <button className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-4 rounded-xl hover:from-sky-600 hover:to-blue-700 font-semibold inline-flex items-center gap-2 transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
             View More
             <FaArrowRight />
           </button>

@@ -10,14 +10,15 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 bg-blue-500 text-white">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-blue-600 via-blue-500 to-sky-500 text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent)]" />
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 text-center">
           {stats.map(stat => (
-            <div key={stat.id} className="flex flex-col items-center">
-              <div className="text-3xl sm:text-4xl mb-2">{stat.icon}</div>
-              <h3 className="text-3xl sm:text-4xl font-bold mb-2">{stat.value}</h3>
-              <p className="text-sm sm:text-base text-blue-200">{stat.label}</p>
+            <div key={stat.id} className="flex flex-col items-center transform hover:scale-110 transition-transform duration-300">
+              <div className="text-4xl sm:text-5xl mb-3 drop-shadow-lg">{stat.icon}</div>
+              <h3 className="text-4xl sm:text-5xl font-extrabold mb-2 drop-shadow-md">{stat.value}</h3>
+              <p className="text-sm sm:text-base text-blue-100 font-medium">{stat.label}</p>
             </div>
           ))}
         </div>

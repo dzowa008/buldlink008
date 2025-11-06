@@ -22,7 +22,7 @@ const AboutUs = () => {
               <span>With over 25 years of combined experience in the industry, our network of professionals is vetted for quality, reliability, and expertise.</span>
             </p>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-              <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 font-semibold inline-flex items-center gap-2 transition">
+              <button className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-3 rounded-xl hover:from-sky-600 hover:to-blue-700 font-semibold inline-flex items-center gap-2 transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
                 Read More
                 <FaArrowRight />
               </button>

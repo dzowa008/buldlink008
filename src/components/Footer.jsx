@@ -3,11 +3,11 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaEnvelope, FaPhon
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-gradient-to-b from-gray-900 to-gray-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold mb-4">BuildLink</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">BuildLink</h3>
             <p className="text-sm sm:text-base text-gray-400">
               Connecting you to a network of trusted and skilled professionals for all your construction and maintenance needs in Zimbabwe.
             </p>
@@ -52,9 +52,9 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-400 hover:text-white transition text-lg"><FaFacebookF /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition text-lg"><FaTwitter /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition text-lg"><FaInstagram /></a>
+              <a href="#" className="text-gray-400 hover:text-sky-400 transition-all text-lg transform hover:scale-125"><FaFacebookF /></a>
+              <a href="#" className="text-gray-400 hover:text-sky-400 transition-all text-lg transform hover:scale-125"><FaTwitter /></a>
+              <a href="#" className="text-gray-400 hover:text-sky-400 transition-all text-lg transform hover:scale-125"><FaInstagram /></a>
             </div>
           </div>
         </div>
